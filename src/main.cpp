@@ -117,7 +117,7 @@ int main()
             std::cout << "        " << "Name: " << deviceName << "\n";
 
             std::string openClVersion = getDeviceStringProperty(deviceId, CL_DEVICE_OPENCL_C_VERSION);
-            std::cout << "        " << "Name: " << openClVersion << "\n";
+            std::cout << "        " << "OpenCL: " << openClVersion << "\n";
 
             auto deviceType = getDevicePrimitiveProperty<cl_device_type>(deviceId, CL_DEVICE_TYPE);
             std::string deviceTypeStr;
